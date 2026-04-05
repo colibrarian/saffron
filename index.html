@@ -47,6 +47,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
+
+    @font-face {
+  font-family: 'SEGO';
+  src: url('./fonts/SEGO.woff2') format('woff2'),
+       url('./fonts/SEGO.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
     :root {
       --orange: #f36125;
       --yellow: #fbcd33;
@@ -140,7 +149,7 @@
       transition: background var(--transition);
     }
     .nav-logo {
-      font-family: 'Playfair Display', serif;
+      font-family: 'SEGO', sans-serif;
       font-weight: 900;
       font-size: 1.35rem;
       letter-spacing: 0.04em;
@@ -224,7 +233,7 @@
     .hero-badge::before { content: '✦'; font-size: 0.7rem; }
 
     h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'SEGO', sans-serif;
       font-weight: 900;
       font-size: clamp(2.4rem, 6vw, 5.2rem);
       line-height: 1.05;
@@ -282,7 +291,7 @@
       margin-bottom: 14px;
     }
     .section-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'SEGO', sans-serif;
       font-weight: 900; font-size: clamp(1.9rem, 4vw, 3.2rem);
       text-transform: uppercase;
       line-height: 1.1;
@@ -318,7 +327,7 @@
       flex: 1; min-width: 120px;
     }
     .about-stat-num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'SEGO', sans-serif;
       font-size: 2.4rem; font-weight: 900;
       color: var(--yellow);
       line-height: 1;
@@ -379,7 +388,7 @@
       border: 1px solid rgba(251,205,51,0.4);
     }
     .price-duration { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 16px; }
-    .price-amount { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: var(--yellow); line-height: 1; }
+    .price-amount { font-family: 'SEGO', sans-serif; font-size: 3rem; font-weight: 900; color: var(--yellow); line-height: 1; }
     .price-currency { font-size: 1.5rem; vertical-align: super; margin-right: 2px; }
     .price-note { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 10px; }
     .price-badge {
@@ -435,7 +444,7 @@
       border: 1px solid rgba(251,205,51,0.22);
       backdrop-filter: blur(30px);
     }
-    .booking-inner h2 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.8rem, 4vw, 3rem); text-transform: uppercase; margin-bottom: 16px; }
+    .booking-inner h2 { font-family: 'SEGO', sans-serif; font-weight: 900; font-size: clamp(1.8rem, 4vw, 3rem); text-transform: uppercase; margin-bottom: 16px; }
     .booking-inner p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 40px; max-width: 480px; margin-left: auto; margin-right: auto; }
 
     @media (max-width: 600px) { .booking-inner { padding: 48px 24px; } }
@@ -498,7 +507,7 @@
 
     /* ── FAQ (SEO, hidden visually but in DOM) ── */
     #faq { padding: 60px 0 0; }
-    .faq-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; text-transform: uppercase; margin-bottom: 28px; }
+    .faq-title { font-family: 'SEGO', sans-serif; font-size: 1.6rem; font-weight: 900; text-transform: uppercase; margin-bottom: 28px; }
     .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
     .faq-q {
       width: 100%; text-align: left;
@@ -524,7 +533,7 @@
       text-align: center;
       border-top: 1px solid rgba(255,255,255,0.07);
     }
-    .footer-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.4rem; color: var(--yellow); margin-bottom: 12px; }
+    .footer-logo { font-family: 'SEGO', sans-serif; font-weight: 900; font-size: 1.4rem; color: var(--yellow); margin-bottom: 12px; }
     .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
 
     /* ── ANIMATIONS ── */
@@ -552,6 +561,36 @@
       display: none; text-align: center; padding: 32px;
       font-size: 1.1rem; color: var(--yellow);
     }
+
+/* ===== TYPOGRAPHY SYSTEM ===== */
+
+h1, h2, h3 {
+  font-family: 'SEGO', sans-serif;
+}
+
+.nav-logo,
+.footer-logo {
+  font-family: 'SEGO', sans-serif;
+}
+
+.section-title {
+  font-family: 'SEGO', sans-serif;
+}
+
+.about-stat-num,
+.price-amount {
+  font-family: 'SEGO', sans-serif;
+}
+
+.faq-title,
+.faq-q {
+  font-family: 'SEGO', sans-serif;
+}
+
+.booking-inner h2 {
+  font-family: 'SEGO', sans-serif;
+}
+    
   </style>
 </head>
 <body>
